@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <center>
+    <div class="calculator">
+      <div class="readonly">
+        <input type="text" id="ro">
+      </div>
+      <div class="button">
+        <div id="AC" data-value="AC" onclick='c("")'>
+          <p>AC</p>
+        </div>
+        <div id="AC" data-value="+/-" onclick='t("")'>
+          <p>+/-</p>
+        </div>
+        <div id="AC" data-value="%" onclick='b("")'>
+          <i id="backspace" class="fa fa-times"></i>
+        </div>
+        <div id="sign" data-value="/" onclick='v("/")'>
+          <p>/</p>
+        </div>
+        <br>
+        <div id="num" data-value="7" onclick='v("7")'>
+          <p>7</p>
+        </div>
+        <div id="num" data-value="8" onclick='v("8")'>
+          <p>8</p>
+        </div>
+        <div id="num" data-value="9" onclick='v("9")'>
+          <p>9</p>
+        </div>
+        <div id="sign" data-value="*" onclick='v("*")'>
+          <p>*</p>
+        </div>
+        <br>
+        <div id="num" data-value="4" onclick='v("4")'>
+          <p>4</p>
+        </div>
+        <div id="num" data-value="5" onclick='v("5")'>
+          <p>5</p>
+        </div>
+        <div id="num" data-value="6" onclick='v("6")'>
+          <p>6</p>
+        </div>
+        <div id="sign" data-value="-" onclick='v("-")'>
+          <p>-</p>
+        </div>
+        <br>
+        <div id="num" data-value="1" onclick='v("1")'>
+          <p>1</p>
+        </div>
+        <div id="num" data-value="2" onclick='v("2")'>
+          <p>2</p>
+        </div>
+        <div id="num" data-value="3" onclick='v("3")'>
+          <p>3</p>
+        </div>
+        <div id="sign" data-value="+" onclick='v("+")'>
+          <p>+</p>
+        </div>
+        <br>
+        <div id="num0" data-value="0" onclick='v("0")'>
+          <p>0</p>
+        </div>
+        <div id="num" data-value="." onclick='v(".")'>
+          <p>.</p>
+        </div>
+        <div id="sign" data-value="=" onclick='e("=")'>
+          <p>=</p>
+        </div>
+      </div>
+    </div>
+  </center>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
